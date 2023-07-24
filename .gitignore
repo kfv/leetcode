@@ -1,0 +1,37 @@
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Build files
+**/build/
+
+# IDE files
+.idea/
+
+# General
+.DS_Store
