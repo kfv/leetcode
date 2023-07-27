@@ -1,10 +1,8 @@
 # General Information
 
-|  ID   |                   1                    |
-|:-----:|:--------------------------------------:|
-| Title |                Two Sum                 |
-| Level |                  Easy                  |
-| Link  | https://leetcode.com/problems/two-sum/ |
+| ID |                       Title                       | Level  |
+|:--:|:-------------------------------------------------:|:------:|
+| 1  | [Two Sum](https://leetcode.com/problems/two-sum/) |  Easy  |
 
 # Implementation Details
 
