@@ -6,11 +6,11 @@
 
 # Implementation Details
 
-| Method      | Time Complexity | Space Complexity | Note                             |
-|:------------|:---------------:|:----------------:|:---------------------------------|
-| Brute Force |     _O(n²)_     |      _O(1)_      | -                                |
-| Two Pointer |  _O(n log n)_   |      _O(n)_      | Assumes input needs to be sorted |
-| Hash Table  |     _O(n)_      |      _O(n)_      | -                                |
+| Method      | Time Complexity | Space Complexity | Note                              |
+|:------------|:---------------:|:----------------:|:----------------------------------|
+| Brute Force |     _O(n²)_     |      _O(1)_      | -                                 |
+| Two Pointer |  _O(n log n)_   |      _O(n)_      | Assumes input needs to be sorted. |
+| Hash Table  |     _O(n)_      |      _O(n)_      | -                                 |
 
 ## Brute Force Method
 
