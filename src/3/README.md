@@ -50,9 +50,10 @@ The function:
    located at the start of the string.
 3. In each iteration, checks whether the current character *end*
    is pointing to is seen before.
-4. If it is and the last seen position is within the current
-   substring (between *start* and *end*,) moves *start* to the
-   right of the last seen position. 
+4. If positive, if the last observed position lies within the
+   current substring (between the *start* and *end* pointers,)
+   it moves the *start* pointer to the right index of that
+   position.
 5. Updates *res* if the length of the current substring is
    greater than its current value.
 6. If *res* is bigger than the remaining length of the string,
