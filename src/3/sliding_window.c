@@ -6,24 +6,24 @@ int
 lengthOfLongestSubstring(char *s)
 {
     int seen[ASCII_CHARS];
-    int n = strlen(s);
-    int i = 0, res = 0;
+    int size = strlen(s);
+    int start = 0, res = 0;
 
     memset(seen, -1, sizeof(seen));
 
-    for (int j = 0; j < n; j++) {
-        int idx = (unsigned char)s[j] - 32;
+    for (int end = 0; end < size; end++) {
+        int idx = (unsigned char)s[end] - 32;
 
         if (seen[idx] != -1)
-            i = (seen[idx] + 1) > i ? seen[idx] + 1 : i;
+            start = (seen[idx] + 1) > start ? seen[idx] + 1 : start;
 
-        res = (j - i + 1 > res) ? j - i + 1 : res;
+        res = (end - start + 1 > res) ? end - start + 1 : res;
 
         // break if remaining part of the string is shorter than res
-        if (n - i <= res)
+        if (size - start <= res)
             break;
 
-        seen[idx] = j;
+        seen[idx] = end;
     }
 
     return res;

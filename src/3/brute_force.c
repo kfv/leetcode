@@ -3,23 +3,26 @@
 int
 lengthOfLongestSubstring(char *s)
 {
-    char *start = s, *cur, *next_occur;
-    int n = strlen(s);
+    char *start = s, *end, *next_occur;
+    int size = strlen(s);
     int res = 0;
 
     while (*start) {
-        cur = start + 1;
-        while (*cur) {
-            next_occur = strchr(start, *cur);
-            if (next_occur && next_occur < cur)
+        end = start + 1;
+
+        while (*end) {
+            next_occur = strchr(start, *end);
+            if (next_occur && next_occur < end)
                 break;
-            cur++;
+            end++;
         }
 
-        res = (cur - start) > res ? (cur - start) : res;
+        res = (end - start) > res ? (end - start) : res;
+
         // break if remaining part of the string is shorter than max_length
-        if (res >= n - (start - s) -1)
+        if (res >= (size - (start - s) - 1))
             break;
+
         start++;
     }
 
