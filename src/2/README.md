@@ -6,9 +6,9 @@
 
 # Implementation Details
 
-| Method    | Time Complexity | Space Complexity | Note                                            |
-|:----------|:---------------:|:----------------:|:------------------------------------------------|
-| Iterative | _O(max(n, m))_  |  _O(max(n, m))_  | n and m are the lengths of the two input lists. |
+| Method    | Time Complexity | Space Complexity | Note                                                |
+|:----------|:---------------:|:----------------:|:----------------------------------------------------|
+| Iterative | $O(\max(n, m))$ | $O(\max(n, m))$  | $n$ and $m$ are the lengths of the two input lists. |
 
 ## Iterative Method
 

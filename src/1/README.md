@@ -8,9 +8,9 @@
 
 | Method      | Time Complexity | Space Complexity | Note                              |
 |:------------|:---------------:|:----------------:|:----------------------------------|
-| Brute Force |     _O(n²)_     |      _O(1)_      | -                                 |
-| Two Pointer |  _O(n log n)_   |      _O(n)_      | Assumes input needs to be sorted. |
-| Hash Table  |     _O(n)_      |      _O(n)_      | -                                 |
+| Brute Force |    $O(n^2)$     |      $O(1)$      | -                                 |
+| Two Pointer |  $O(n \log n)$  |      $O(n)$      | Assumes input needs to be sorted. |
+| Hash Table  |     $O(n)$      |      $O(n)$      | -                                 |
 
 ## Brute Force Method
 
@@ -44,7 +44,7 @@ original indices to return the indices of the two
 elements.
 
 Keep in mind that if the array was already sorted, the time
-complexity would be O(n), making this method particularly
+complexity would be $O(n)$, making this method particularly
 effective when working with pre-sorted arrays.
 
 ## Hash Table Method
